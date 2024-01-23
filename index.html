@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+Mortgage AI
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+<body>
+  <div class="container">
+
+      <div class="sectionOne">
+        <h1 class="lead"><img height="40px" src="https://instamortgage.com/wp-content/themes/btheme/images/insta_mortage_logo.png">&nbsp;&nbsp;<a href="https://instamortgage.com/">InstaMortgage</a> AI Assistant, at your service.</h1>
+      </div>
+      <!-- <p class="lead">InstaMortgage: the innovative mortgage lender that borrower's love.</p> -->
+
+      
+      <div class="sectionTwo">
+        <div class="formAnswerPair"> <!-- This is the most likely place to insert {{ wtf.quick_form(form) }}-->
+          <div class="wtfGeneratedForm">
+            <form action="" method="post" class="form" role="form">
+              <input id="csrf_token" name="csrf_token" type="hidden" value="IjRhMzA3Y2VjZjYzOTY3ZjRlNWE3YWMxOGZhYmNhMjJlZTQyYWE3YjAi.Za_o-w.Mxs1TBQ9GX9TmR0f771jhwLzdsA">
+              <div class="form-group  required"><label class="control-label" for="question">Your question:</label>
+                    <input class="form-control" id="question" name="question" required type="text" value="">
+              </div>
+              <input class="btn btn-default" id="submit" name="submit" type="submit" value="Submit">
+            </form>
+            <p class="lead">If you have access to the Document Verification Google Drive,
+            you can find it <a href="https://drive.google.com/drive/folders/13rjuESAYB61QreK9xxplMWGHo3EBUtoB" target="_blank">here</a></p>
+          </div>
+        
+          <div class="qA">
+            <!--{% autoescape false %}-->
+            <p class="pt-5"><br><br><strong>status</strong></p> <!--{{ thequestion }}-->
+            <p class="pt-5" style="font-size:18px">Current document verification status</p> <!--{{ message }}-->
+            <!--{% endautoescape %}-->
+          </div>
+        </div>
+        
+        <div class="dataTable"> <!--This is the div which we will insert {{ table_html | safe }}-->
+          <table border="1" class="dataframe">
+            <thead>
+              <tr style="text-align: right;">
+                <th></th>
+                <th>timestamp</th>
+                <th>action</th>
+                <th>status</th>
+                <th>details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>0</th>
+                <td>2024-01-12 14:20:36</td>
+                <td>processed asset checklist</td>
+                <td>success</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th>1</th>
+                <td>2024-01-12 15:31:08</td>
+                <td>processed asset checklist</td>
+                <td>success</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>2024-01-12 18:11:23</td>
+                <td>processed asset checklist</td>
+                <td>success</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>2024-01-16 15:40:20</td>
+                <td>starting doc verify process</td>
+                <td>started</td>
+                <td>scan google drive files</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>2024-01-16 15:40:22</td>
+                <td>read xml loan app</td>
+                <td>started</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>2024-01-16 15:40:23</td>
+                <td>read xml loan app</td>
+                <td>skipped</td>
+                <td>Loan Application already processed</td>
+              </tr>
+              <tr>
+                <th>6</th>
+                <td>2024-01-16 15:40:26</td>
+                <td>get + save list of docs</td>
+                <td>success</td>
+                <td>40 files</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+              <tr>
+                <th>7</th>
+                <td>2024-01-21 19:07:39</td>
+                <td>summarized loan app</td>
+                <td>success</td>
+                <td>17 fields</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+
+
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
