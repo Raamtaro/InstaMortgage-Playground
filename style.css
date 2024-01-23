@@ -38,10 +38,12 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    min-width: 66%;
 }
 
 .formAnswerPair {
-    /* width: 34%; */
+    max-width: 34%;
+    min-width: 20%;
 }
 
 table {
